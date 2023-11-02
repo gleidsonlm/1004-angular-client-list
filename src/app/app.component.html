@@ -1,28 +1,52 @@
-<nav class="navbar navbar-expand-sm navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
-      <h1>Angular Bootstrap</h1>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="32"
+      height="32"
+      fill="white"
+      class="bi bi-book ms-md-5"
+      viewBox="0 0 16 16"
+    >
+      <path
+        d="M0 0v16h16V0H0zm8 2a1 1 0 0 1 1 1v1H7V3a1 1 0 0 1 1-1zm6 2a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a1 1 0 0 1 1-1h10zm-6
+      9a1 1 0 0 1-1-1V9h2v3a1 1 0 0 1-1 1z"
+      ></path>
+    </svg>
+    <a class="navbar-brand ms-2" href="#">
+      <h1>{{ HeadingOneText }}</h1>
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Index</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+
+    <div
+      class="collapse navbar-collapse justify-content-end me-md-5 mt-2"
+      id="navbarSupportedContent"
+    >
+      <div class="col-auto">
+        <form class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control flex-grow-1"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <span class="input-group-text" id="basic-addon2">
+            <span class="bi bi-search"></span>
+          </span>
+        </form>
+      </div>
     </div>
   </div>
 </nav>
 
+<app-nav-bar></app-nav-bar>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+    <path
+    d="M0 0v16h16V0H0zm8 2a1 1 0 0 1 1 1v1H7V3a1 1 0 0 1 1-1zm6 2a1 1 0 0 1 1 1v7a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V5a1 1 0 0 1 1-1h10zm-6
+    9a1 1 0 0 1-1-1V9h2v3a1 1 0 0 1-1 1z">
+    </path>
+</svg>

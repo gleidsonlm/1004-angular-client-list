@@ -1,0 +1,41 @@
+<form [formGroup]="customerForm" (ngSubmit)="onSubmit()" class="form-control">
+  <div class="form-floating">
+    <label for="username" class="form-label"> </label>
+    <input
+      id="username"
+      class="form-control"
+      type="text"
+      name="username"
+      formControlName="username"
+      placeholder="username"
+      required
+    />
+    <span class="invalid-feedback"> Please choose a username. </span>
+  </div>
+
+  <div class="form-floating">
+    <label for="email" class="form-label">Email: </label>
+    <input
+      type="text"
+      name="email"
+      id="email"
+      formControlName="email"
+      placeholder="email"
+      required="true"
+      class="form-control"
+    />
+  </div>
+  <div class="form-floating">
+    <label for="dob" class="form-label"></label>
+    <input
+      type="date"
+      name="dob"
+      id="dob"
+      formControlName="dob"
+      placeholder="01/01/2000"
+      required="true"
+      class="form-control"
+    />
+  </div>
+  <button type="submit">Save</button>
+</form>
