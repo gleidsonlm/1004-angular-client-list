@@ -13,6 +13,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { CustomerListComponent } from './pages/customer-list/customer-list.component';
 import { CustomerEditComponent } from './pages/customer-edit/customer-edit.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { LoginComponent } from './pages/login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     CustomerListComponent,
-    CustomerEditComponent
+    CustomerEditComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
