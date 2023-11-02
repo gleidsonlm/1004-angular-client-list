@@ -1,20 +1,15 @@
-import { NgModule } from "@angular/core";
-import { RouterModule, Routes } from "@angular/router";
-import { HomeComponent } from "./pages/home/home.component";
-import { AboutComponent } from "./pages/about/about.component";
-import { NotFoundComponent } from "./pages/not-found/not-found.component";
-import { EditCustomerComponent } from "./pages/edit-customer/edit-customer.component";
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import { CustomerListComponent } from './pages/customer-list/customer-list.component';
+import { CustomerEditComponent } from './pages/customer-edit/customer-edit.component';
 
 const routes: Routes = [
-  { path: "", redirectTo: "/home", pathMatch: "full" },
-  { path: "home", component: HomeComponent },
-  { path: "about", component: AboutComponent },
-  { path: "edit", component: EditCustomerComponent },
-  { path: "**", component: NotFoundComponent }
+  { path:"customer-list",component: CustomerListComponent },
+  {path: "customer-edit/:id", component: CustomerEditComponent}
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
